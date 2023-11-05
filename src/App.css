@@ -8,3 +8,18 @@
     margin-top: 1rem;
     font-weight: 600;
 }
+
+.custom-scrollbar {
+    overflow-x: auto;
+    overflow-y: auto;
+    /* Enable horizontal scrolling */
+    scrollbar-width: none;
+    /* Hide the scrollbar for Firefox */
+    -ms-overflow-style: none;
+    /* Hide the scrollbar for IE/Edge */
+}
+
+/* Hide the scrollbar for webkit-based browsers (Chrome, Safari) */
+.custom-scrollbar::-webkit-scrollbar {
+    display: none;
+}

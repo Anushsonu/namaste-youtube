@@ -2,12 +2,18 @@ import React from "react";
 import { useSelector } from "react-redux";
 
 const Sidebar = () => {
+  const darkTheme = useSelector((store) => store?.app?.darkTheme);
   const isMenuOpen = useSelector((store) => store.app.isMenuOpen);
+  // const elemStyle={backgroundColor:"white"}
   if (!isMenuOpen) {
     return null;
   }
   return (
-    <div className="sidebar p-5 shadow-lg min-w-[220px]">
+    <div
+      className={`sidebar p-5 shadow-lg w-[150px] md:min-w-[220px] ${
+        darkTheme ? "bg-gray-900" : "bg-white"
+      } ${darkTheme ? "text-white" : "text-black"}`}
+    >
       <ul>
         <li>Home</li>
         <li>Shorts</li>
