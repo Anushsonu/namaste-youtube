@@ -25,7 +25,7 @@ const ButtonList = () => {
     "Birds",
     "Laptops",
     "Latest mobiles",
-    "Ladies makeup",
+    "Cactus",
     "Atmosphere",
     "Universe",
   ];
